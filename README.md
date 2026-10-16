@@ -13,7 +13,10 @@
 
 ## 資料
 
-- [作品・登場人物の設定資料](docs/settings.md)
+- [作品設定・人物別資料の索引](docs/settings.md)
+- [人物別の設定資料](docs/characters/)
+- [各話の構成・本編化メモ](docs/chapter_notes.md)
+- [保留中の人物・旧案](docs/archive/)
 - [カナのエピソード候補](docs/kana_episodes.md)
 
 ## 設定の扱い
