@@ -41,3 +41,12 @@ footer { position: static; clear: both; float: none; width: auto; padding-top: 3
   .novel h1 { font-size: 22px; }
   .intro { font-size: 17px; }
 }
+
+/* Novel emphasis and reading aids. */
+.novel .bouten {
+  -webkit-text-emphasis: filled sesame;
+  text-emphasis: filled sesame;
+  text-emphasis-position: over right;
+}
+.novel ruby { ruby-position: over; }
+.novel rt { font-size: 0.55em; }
