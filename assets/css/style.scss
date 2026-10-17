@@ -32,9 +32,11 @@ footer { position: static; clear: both; float: none; width: auto; padding-top: 3
   header { padding: 0; margin-bottom: 28px; }
   section { padding: 32px; }
 }
+@media screen and (max-width: 600px) {
+  body { padding: 16px 8px; }
+  section { padding: 24px 10px; }
+}
 @media screen and (max-width: 480px) {
-  body { padding: 16px; }
-  section { padding: 24px 18px; }
   .novel { font-size: 16px; }
   .novel h1 { font-size: 22px; }
   .intro { font-size: 17px; }
