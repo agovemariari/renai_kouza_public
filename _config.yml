@@ -4,3 +4,20 @@ lang: ja
 theme: jekyll-theme-minimal
 url: https://agovemariari.github.io
 baseurl: /renai_kouza_public
+timezone: Asia/Tokyo
+show_downloads: false
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/cover/series-cover.png
+  - scope:
+      path: "chapters"
+    values:
+      layout: chapter
+exclude:
+  - README.md

@@ -1,0 +1,41 @@
+---
+---
+@import "{{ site.theme }}";
+
+body { background: #fcf8f7; color: #40363b; font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif; font-size: 16px; line-height: 1.9; }
+a { color: #923e5b; }
+a:hover, a:focus { color: #64253b; font-weight: inherit; text-decoration: underline; }
+a:focus-visible { outline: 3px solid #923e5b; outline-offset: 4px; }
+h1, h2, h3 { color: #492e39; line-height: 1.6; }
+.wrapper { width: 1060px; max-width: 100%; }
+header { width: 250px; position: static; }
+header h1 { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; }
+header .view { font-size: 12px; }
+section { box-sizing: border-box; width: 740px; max-width: 100%; padding: 36px 44px; background: #fffefd; border: 1px solid #eadce0; border-radius: 12px; }
+footer { position: static; clear: both; float: none; width: auto; padding-top: 32px; font-size: 12px; }
+.eyebrow, .draft-note { color: #75626a; font-size: 13px; }
+.series-cover { display: block; width: 100%; max-height: 560px; object-fit: contain; margin: 0 auto 28px; border-radius: 6px; }
+.intro { font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 19px; }
+.read-button { display: inline-block; padding: 12px 24px; border-radius: 6px; background: #923e5b; color: white; }
+.read-button:hover, .read-button:focus { background: #64253b; color: white; }
+.episode-list { list-style: none; padding: 0; }
+.episode-list li { border-bottom: 1px solid #eadce0; }
+.episode-list a { display: flex; justify-content: space-between; gap: 12px; padding: 18px 0; }
+.novel { font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif CJK JP", serif; font-size: 17px; line-height: 2.15; overflow-wrap: anywhere; line-break: strict; }
+.novel h1 { font-size: 25px; margin-bottom: 36px; }
+.novel p { margin-bottom: 1.6em; }
+.chapter-nav { display: flex; flex-direction: column; gap: 16px; margin-top: 40px; padding-top: 24px; border-top: 1px solid #eadce0; }
+@media screen and (max-width: 1150px) {
+  body { padding: 28px; }
+  div.wrapper { width: auto; margin: 0 auto; max-width: 740px; }
+  header, section, footer { width: 100%; float: none; position: static; }
+  header { padding: 0; margin-bottom: 28px; }
+  section { padding: 32px; }
+}
+@media screen and (max-width: 480px) {
+  body { padding: 16px; }
+  section { padding: 24px 18px; }
+  .novel { font-size: 16px; }
+  .novel h1 { font-size: 22px; }
+  .intro { font-size: 17px; }
+}

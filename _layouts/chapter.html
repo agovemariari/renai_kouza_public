@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<p><a href="{{ '/' | relative_url }}#episodes">← 本編目次</a></p>
+<article class="novel">{{ content }}</article>
+<nav class="chapter-nav" aria-label="各話の移動">
+{% assign episodes = site.pages | where: 'layout', 'chapter' | sort: 'path' %}
+{% for episode in episodes %}
+  {% if episode.url == page.url %}
+    {% unless forloop.first %}
+      {% assign previous_index = forloop.index0 | minus: 1 %}
+      {% assign previous = episodes[previous_index] %}
+      <a href="{{ previous.url | relative_url }}">← {{ previous.title | escape }}</a>
+    {% endunless %}
+    <a href="{{ '/' | relative_url }}#episodes">目次に戻る</a>
+    {% unless forloop.last %}
+      {% assign next_index = forloop.index0 | plus: 1 %}
+      {% assign next = episodes[next_index] %}
+      <a href="{{ next.url | relative_url }}">{{ next.title | escape }} →</a>
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+</nav>

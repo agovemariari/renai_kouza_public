@@ -1,0 +1,18 @@
+---
+layout: default
+title: 恋愛講座、全員再履修
+---
+<p class="eyebrow">創作百合コメディ · 連載小説</p>
+<img class="series-cover" src="{{ '/assets/cover/series-cover.png' | relative_url }}" alt="恋愛講座、全員再履修 シリーズ表紙">
+<h1>恋愛講座、全員再履修</h1>
+<p class="intro">重すぎる女たちが「健全な恋愛」を学び、<br>学んだことを盛大に間違えて使う。</p>
+<p>どうしようもない女たちの、オリジナル恋愛群像コメディ。</p>
+<p><a class="read-button" href="{{ '/chapters/001.html' | relative_url }}">第一話から読む →</a></p>
+<h2 id="episodes">本編目次</h2>
+<p class="draft-note">各話は初稿です。今後、加筆・修正する場合があります。</p>
+<ol class="episode-list">
+{% assign episodes = site.pages | where: 'layout', 'chapter' | sort: 'path' %}
+{% for episode in episodes %}
+  <li><a href="{{ episode.url | relative_url }}">{{ episode.title | escape }} <span aria-hidden="true">→</span></a></li>
+{% endfor %}
+</ol>
